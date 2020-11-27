@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comprar criptomoedas</title>
+        <link rel="stylesheet" type="text/css" href="css/comprarCriptoMoedaStyled.css">
+        <script defer type="module" src="src/buy.js"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <a class="arrow" href="/home"><img src="/images/arrow-right.svg"/></a>
+        </div>
+        <div class="content">
+            <div class="infos-divs">
+                <p class="infos-text">Saldo em conta:</p>
+                <p id="balance" class="infos-text"></p>
+            </div>
+            <form>
+                <label>Informe a moeda(Valor por unidade)</label>
+                <br />
+                <input id="coin" list="coins" class="infos-inputs">
+                <datalist id="coins"></datalist>
+                <br />
+                <label>Informe a quantidade</label>
+                <br />
+                <input id="amount" type="number" value="1" class="infos-inputs">
+                <br />
+                <label>Valor total de compra</label>
+                <br />
+                <input id="buy-price" type="text"  class="infos-inputs" disabled>
+                <br />
+                <input id="submit" type="submit" class="submit" value="Comprar">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastrar-se</title>
+        <link rel="stylesheet" type="text/css" href="css/cadastrarSeStyled.css">
+        <script defer type="module" src="src/register.js"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <a class="arrow" href="/"><img src="/images/arrow-right.svg"/></a>
+        </div>
+        <div class="content">
+            <div class="logo">
+                <img src="/images/logo-criptocoins.svg"/>
+                <h1>Criptocoins</h1>
+            </div>
+            <form>
+                <label>Nome completo:</label>
+                <br />
+                <input id="name" class="text" type="text" autofocus required>
+                <br />
+                <br />
+                <label>E-mail:</label>
+                <br />
+                <input id="email" class="text" type="email" required>
+                <br />
+                <br />
+                <label>Confirme o e-mail:</label>
+                <br />
+                <input id="confirmEmail" class="text" type="email" required>
+                <br />
+                <br />
+                <label>CPF:</label>
+                <br />
+                <input id="CPF" class="text"  inputmode="numeric" type="text" maxlength="14" required>
+                <br />
+                <br />
+                <label>Data de nascimento:</label>
+                <br />
+                <input id="date" class="text" type="date" required>
+                <br />
+                <br />
+                <label>Senha:</label>
+                <br />
+                <input id="password" class="text" type="password" required>
+                <br />
+                <br />
+                <label>Confirme a senha:</label>
+                <br />
+                <input id="confirmPassword" class="text" type="password" required>
+                <br />
+                <br />
+                <input id="submit" class="submit" type="button" value="Criar conta">
+            </form>
+        </div>
+    </body>
+</html>

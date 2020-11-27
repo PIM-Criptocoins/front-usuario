@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    font-family: "Times New Roman";
+}
+
+.content{
+    margin: 1;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #575A89;
+    width: 100%;
+}
+
+.arrow {
+    margin: 1%;
+}
+
+.infos-divs {
+    display: flex;
+}
+
+.infos-inputs{
+    width: 97%;
+}
+
+.submit{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    width: 100%;
+    background-color: #575A89;
+    margin: 2% 0% 2% 0%;
+}
+
+
+@media(min-width: 768px){
+    .content{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

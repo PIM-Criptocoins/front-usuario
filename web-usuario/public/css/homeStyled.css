@@ -1,0 +1,184 @@
+body {
+    margin: 0%;
+    font-family: "Times New Roman";
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #575A89;
+    width: 100%;
+}
+
+hr {
+    color: lightgray;
+}
+
+.content {
+    padding: 0% 1% 0% 1%;
+}
+
+.header-login {
+    margin: 2%;
+    color: white;
+}
+
+.header-title {
+    margin: 2%;
+    color: white;
+}
+
+.anchor{
+    text-decoration: none;
+    color: white;
+}
+
+.title {
+    margin: 1% 0% 1% 0%;
+}
+
+.text {
+    margin: 1%;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.infos {
+    margin: 5% 1% 5% 1%;
+}
+
+.infos-divs {
+    display: flex;
+}
+
+.infos-text {
+    font-size: 1rem;
+    margin: 0%;
+}
+
+.table-coins {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tr-table {
+    display: flex;
+    flex-direction: column;
+    border-right: solid black 1px;
+    padding-right: 0.5%;
+}
+
+.tr-text {
+    margin: 0;
+}
+
+.icon {
+    align-items: center;
+    width: 3vw;
+    margin-right: 10px;
+}
+
+td {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%
+}
+
+.buttons-block-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 1% 2% 0%;
+    width: 100vw;
+}
+
+.buttons-block-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0% 2% 1%;
+    width: 100vw;
+}
+
+.button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1vw;
+    width: 100%;
+    background-color: #575A89;
+    margin: 2% 0% 2% 0%;
+}
+
+footer {
+    padding: 0% 1% 0% 1%;
+    background-color: #F0F0F0;
+}
+
+.viseble-off {
+    visibility: hidden;
+}
+
+
+.text-company {
+    margin: 1%;
+    font-size: 16px;
+    text-align: justify;
+}
+
+@media(min-width: 768px){
+    #header {
+        width: 100%;
+    }
+
+    .content {
+        padding: 0% 10% 0% 10%;
+    }
+
+    .header-login {
+        margin: 1%;
+    }
+
+    .header-title {
+        margin: 1%;
+    }
+
+    .infos {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+        margin: 5% 0% 5% 0%;
+    }
+
+    .infos-text {
+        font-size: 1rem;
+    }
+
+    .icon {
+        width: 1.3vw;
+    }
+
+    footer {
+        padding: 0% 10% 5% 10%;
+    }
+
+    .footer-block {
+        display: flex;
+    }
+
+    .infos-company {
+        margin-right: 2%;
+    }
+
+    .google-play {
+        margin-top: 3%;
+        margin-left: 13%;
+    }
+
+    .text-company{
+        width: 32vw;
+    }
+}

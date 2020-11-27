@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fazer Aporte</title>
+        <link rel="stylesheet" type="text/css" href="css/fazerAporteStyled.css">
+        <script defer type="module" src="src/makeContribution.js"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <a class="arrow" href="/home"><img src="/images/arrow-right.svg"/></a>
+        </div>
+        <div class="content">
+            <hr class="visible" />
+            <div class="content-infos">
+                <h3 class="title">Informações do banco para tranferência</h3>
+                <h3 class="title">TED/DOC</h3>
+                <div class="flex">
+                    <p>Saldo em conta:</p>
+                    <p id="balance"></p>
+                </div>
+                <p>Teds e docs podem levar até 3 dias uteis para cair o valor na conta.</p>
+                <dl>
+                    <dt>BANCO: 237 - BRADESCO</dt>
+                    <dt>AGÊNCIA: 0001</dt>
+                    <dt>CONTA: 0000000-1</dt>
+                    <dt>NOME: Criptocoins LTDA</dt>
+                    <dt>CNPJ: 03.357.744/0001-56</dt>
+                </dl>
+            </div>
+            <hr />
+            <div class="content-infos">
+                <h3 class="title">Boleto</h3>
+                <p>Boletos podem levar até 3 dias uteis para cair o valor na conta.</p>
+                <form>
+                    <label>Valor a ser depositado:</label>
+                    <br />
+                    <input id="deposit" class="text" type="number" placeholder="min R$100,00">
+                    <div class="content-input">
+                        <br />
+                        <input id="submit" class="submit" type="submit" value="Gerar Boleto(Depositar)">
+                    </div>
+                </form>
+            </div>
+            <hr />
+        </div>
+    </body>
+</html>

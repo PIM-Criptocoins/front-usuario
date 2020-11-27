@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fazer Resgate</title>
+        <link rel="stylesheet" type="text/css" href="css/fazerResgateStyled.css">
+        <script defer type="module" src="src/rescue.js"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <a class="arrow" href="/home"><img src="/images/arrow-right.svg"/></a>
+        </div>
+        <div class="content">
+            <div class="header-title">
+                <h3 class="title">Informe aqui os dados necessarios para o resgate</h3>
+            </div>
+            <hr />
+            <div class="content-infos">
+                <form>
+                    <label>Banco:</label>
+                    <br />
+                    <input id="banco" class="text" type="text" required>
+                    <label>Agência:</label>
+                    <br />
+                    <input id="agency" class="text" type="number" required>
+                    <label>Conta:</label>
+                    <br />
+                    <input id="account"class="text" type="number" required>
+                    <label>Nome completo:</label>
+                    <br />
+                    <input id="name" class="text" type="text" required>
+                    <label>CPF ou CNPJ:</label>
+                    <br />
+                    <input id="CPF" inputmode="numeric" maxlength="14" class="text" type="text" required>
+                    <br />
+                    <div class="flex">
+                        <p>Saldo em conta:</p>
+                        <p id="balance"></p>
+                    </div>
+                    <label>Valor a ser resgatado:</label>
+                    <br />
+                    <input id="rescued" class="text" type="number">
+                    <div class="content-input">
+                        <br />
+                        <input id="submit" class="submit" type="submit" value="Resgate">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
